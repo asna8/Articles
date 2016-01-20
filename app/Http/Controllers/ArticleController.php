@@ -30,11 +30,29 @@ public function create()
 public function store()
 {
 
-	$input=Request::all();
-	$input['published_at']=Carbon::now();
-	Article::create($input);
-
-	return redirect('article');
+		$input=Request::all();
+		$input['published_at']=Carbon::now();
+		Article::create($input);
+		return redirect ('article');
+	
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
